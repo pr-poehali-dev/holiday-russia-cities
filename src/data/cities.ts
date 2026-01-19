@@ -81,53 +81,8 @@ export const cities: City[] = [
   { id: 40, name: 'Калининград', nameEn: 'Kaliningrad', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/f8ce0932-3f8b-4090-9565-431687091da1.jpg', population: 489000, temp: -2, lat: 54.7104, lng: 20.4522 },
 ];
 
-export const attractions: Record<number, Attraction[]> = {
-  1: [
-    { id: 1, cityId: 1, nameRu: 'Красная площадь', nameEn: 'Red Square', descRu: 'Главная площадь Москвы, окружённая историческими зданиями, включая Кремль и собор Василия Блаженного. Символ России и место проведения главных государственных мероприятий.', descEn: 'The main square of Moscow, surrounded by historic buildings including the Kremlin and St. Basil\'s Cathedral. Symbol of Russia and venue for major state events.', image: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=800&q=80' },
-    { id: 2, cityId: 1, nameRu: 'Московский Кремль', nameEn: 'Moscow Kremlin', descRu: 'Историческая крепость в центре Москвы, резиденция Президента России. Включает соборы, дворцы и Оружейную палату с уникальными экспонатами.', descEn: 'A historic fortified complex in the center of Moscow, the official residence of the President of Russia. Includes cathedrals, palaces and the Armory with unique exhibits.', image: 'https://images.unsplash.com/photo-1520106212299-d99c443e4568?w=800&q=80' },
-    { id: 3, cityId: 1, nameRu: 'Собор Василия Блаженного', nameEn: 'St. Basil\'s Cathedral', descRu: 'Уникальный православный храм с разноцветными куполами, построенный в XVI веке по приказу Ивана Грозного. Является визитной карточкой России.', descEn: 'A unique Orthodox church with colorful domes, built in the 16th century by order of Ivan the Terrible. It is the hallmark of Russia.', image: 'https://images.unsplash.com/photo-1547448415-e9f5b28e570d?w=800&q=80' },
-    { id: 4, cityId: 1, nameRu: 'Большой театр', nameEn: 'Bolshoi Theatre', descRu: 'Один из крупнейших в мире театров оперы и балета, основан в 1776 году. Известен своей труппой и величественным зданием с колоннадой.', descEn: 'One of the world\'s largest opera and ballet theaters, founded in 1776. Known for its company and magnificent building with colonnade.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' },
-    { id: 5, cityId: 1, nameRu: 'Парк Горького', nameEn: 'Gorky Park', descRu: 'Центральный парк культуры и отдыха с современными зонами отдыха, спортивными площадками, кафе и культурными мероприятиями.', descEn: 'Central Park of Culture and Leisure with modern recreation areas, sports grounds, cafes and cultural events.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' }
-  ],
-  2: [
-    { id: 6, cityId: 2, nameRu: 'Эрмитаж', nameEn: 'Hermitage Museum', descRu: 'Один из крупнейших и самых значительных художественных и культурно-исторических музеев мира. Коллекция насчитывает около 3 миллионов произведений искусства.', descEn: 'One of the largest and most significant art and cultural-historical museums in the world. The collection includes about 3 million works of art.', image: 'https://images.unsplash.com/photo-1555991100-7f3e33b59759?w=800&q=80' },
-    { id: 7, cityId: 2, nameRu: 'Петергоф', nameEn: 'Peterhof', descRu: 'Дворцово-парковый ансамбль на берегу Финского залива, известный своими фонтанами и парками. "Русский Версаль" был резиденцией российских императоров.', descEn: 'Palace and park ensemble on the shore of the Gulf of Finland, known for its fountains and parks. The "Russian Versailles" was the residence of Russian emperors.', image: 'https://images.unsplash.com/photo-1582655299221-2ff79e0f66e2?w=800&q=80' },
-    { id: 8, cityId: 2, nameRu: 'Исаакиевский собор', nameEn: 'St. Isaac\'s Cathedral', descRu: 'Крупнейший православный храм Санкт-Петербурга. Высота собора 101,5 метра, с колоннады открывается панорама города.', descEn: 'The largest Orthodox church in St. Petersburg. The cathedral is 101.5 meters high, the colonnade offers a panorama of the city.', image: 'https://images.unsplash.com/photo-1562013798-24ed6bb0c8a0?w=800&q=80' },
-    { id: 9, cityId: 2, nameRu: 'Невский проспект', nameEn: 'Nevsky Prospect', descRu: 'Главная улица Санкт-Петербурга протяженностью 4,5 км. Соединяет Адмиралтейство с Александро-Невской лаврой.', descEn: 'The main street of St. Petersburg with a length of 4.5 km. Connects the Admiralty with the Alexander Nevsky Lavra.', image: 'https://images.unsplash.com/photo-1597075933405-c80fbd3c3f1b?w=800&q=80' },
-    { id: 10, cityId: 2, nameRu: 'Дворцовая площадь', nameEn: 'Palace Square', descRu: 'Главная площадь Санкт-Петербурга, архитектурный ансамбль с Зимним дворцом и Александровской колонной.', descEn: 'The main square of St. Petersburg, an architectural ensemble with the Winter Palace and the Alexander Column.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' }
-  ]
-};
+import { allAttractions, allNews, allHotels } from './citiesData';
 
-export const news: Record<number, NewsItem[]> = {
-  1: [
-    { id: 1, cityId: 1, titleRu: 'Новый культурный центр открылся в районе Замоскворечье', titleEn: 'New cultural center opened in Zamoskvorechye district', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
-    { id: 2, cityId: 1, titleRu: 'Фестиваль "Путешествие в Рождество" продлён до конца января', titleEn: 'Journey to Christmas festival extended until end of January', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
-    { id: 3, cityId: 1, titleRu: 'Московское метро запустило новую станцию "Лефортово"', titleEn: 'Moscow Metro launched new Lefortovo station', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
-    { id: 4, cityId: 1, titleRu: 'Третьяковская галерея представила выставку русского авангарда', titleEn: 'Tretyakov Gallery presented Russian avant-garde exhibition', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
-    { id: 5, cityId: 1, titleRu: 'В Парке Горького открылся новый каток площадью 18 000 кв.м', titleEn: 'New 18,000 sq.m ice rink opened in Gorky Park', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
-  ],
-  2: [
-    { id: 6, cityId: 2, titleRu: 'Эрмитаж представил выставку искусства Древнего Египта', titleEn: 'Hermitage presented Ancient Egyptian art exhibition', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
-    { id: 7, cityId: 2, titleRu: 'Мариинский театр объявил программу весеннего сезона', titleEn: 'Mariinsky Theatre announced spring season program', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
-    { id: 8, cityId: 2, titleRu: 'Начался ремонт исторических фасадов на Невском проспекте', titleEn: 'Renovation of historic facades on Nevsky Prospect began', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
-    { id: 9, cityId: 2, titleRu: 'Петропавловская крепость открыла зимний туристический маршрут', titleEn: 'Peter and Paul Fortress opened winter tourist route', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
-    { id: 10, cityId: 2, titleRu: 'В Петергофе запустили виртуальные туры по дворцам', titleEn: 'Peterhof launched virtual palace tours', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
-  ]
-};
-
-export const hotels: Record<number, Hotel[]> = {
-  1: [
-    { id: 1, cityId: 1, nameRu: 'Метрополь', nameEn: 'Metropol', stars: 5, image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&q=80', website: 'https://www.metropol-moscow.ru' },
-    { id: 2, cityId: 1, nameRu: 'Ритц-Карлтон Москва', nameEn: 'Ritz-Carlton Moscow', stars: 5, image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&q=80', website: 'https://www.ritzcarlton.com/moscow' },
-    { id: 3, cityId: 1, nameRu: 'Лотте Отель Москва', nameEn: 'Lotte Hotel Moscow', stars: 5, image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&q=80', website: 'https://www.lottehotel.com/moscow' },
-    { id: 4, cityId: 1, nameRu: 'Арарат Парк Хаятт', nameEn: 'Ararat Park Hyatt', stars: 5, image: 'https://images.unsplash.com/photo-1455587734955-081b22074882?w=400&q=80', website: 'https://www.hyatt.com/moscow' },
-    { id: 5, cityId: 1, nameRu: 'Marriott Москва Гранд', nameEn: 'Moscow Marriott Grand', stars: 4, image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&q=80', website: 'https://www.marriott.com' }
-  ],
-  2: [
-    { id: 6, cityId: 2, nameRu: 'Гранд Отель Европа', nameEn: 'Grand Hotel Europe', stars: 5, image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&q=80', website: 'https://www.grandhoteleurope.com' },
-    { id: 7, cityId: 2, nameRu: 'Четыре Сезона Санкт-Петербург', nameEn: 'Four Seasons St. Petersburg', stars: 5, image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&q=80', website: 'https://www.fourseasons.com/stpetersburg' },
-    { id: 8, cityId: 2, nameRu: 'Коринтия Отель', nameEn: 'Corinthia Hotel', stars: 5, image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&q=80', website: 'https://www.corinthia.com/st-petersburg' },
-    { id: 9, cityId: 2, nameRu: 'W Санкт-Петербург', nameEn: 'W St. Petersburg', stars: 5, image: 'https://images.unsplash.com/photo-1455587734955-081b22074882?w=400&q=80', website: 'https://www.marriott.com/w-hotels' },
-    { id: 10, cityId: 2, nameRu: 'Radisson Royal', nameEn: 'Radisson Royal', stars: 4, image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&q=80', website: 'https://www.radissonhotels.com' }
-  ]
-};
+export const attractions = allAttractions;
+export const news = allNews;
+export const hotels = allHotels;
