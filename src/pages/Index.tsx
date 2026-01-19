@@ -5,33 +5,8 @@ import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import CityCard from '@/components/CityCard';
 import CityPage from '@/components/CityPage';
-
-interface City {
-  id: number;
-  name: string;
-  nameEn: string;
-  image: string;
-  population: number;
-  temp: number;
-}
-
-const cities: City[] = [
-  { id: 1, name: 'Москва', nameEn: 'Moscow', image: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=800', population: 13010000, temp: -5 },
-  { id: 2, name: 'Санкт-Петербург', nameEn: 'Saint Petersburg', image: 'https://images.unsplash.com/photo-1555991100-7f3e33b59759?w=800', population: 5600000, temp: -8 },
-  { id: 3, name: 'Новосибирск', nameEn: 'Novosibirsk', image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800', population: 1633000, temp: -15 },
-  { id: 4, name: 'Екатеринбург', nameEn: 'Yekaterinburg', image: 'https://images.unsplash.com/photo-1562013798-24ed6bb0c8a0?w=800', population: 1544000, temp: -12 },
-  { id: 5, name: 'Казань', nameEn: 'Kazan', image: 'https://images.unsplash.com/photo-1597075933405-c80fbd3c3f1b?w=800', population: 1308000, temp: -10 },
-  { id: 6, name: 'Нижний Новгород', nameEn: 'Nizhny Novgorod', image: 'https://images.unsplash.com/photo-1564074893508-41dc50dd1c71?w=800', population: 1228000, temp: -9 },
-  { id: 7, name: 'Челябинск', nameEn: 'Chelyabinsk', image: 'https://images.unsplash.com/photo-1564074893508-41dc50dd1c71?w=800', population: 1188000, temp: -14 },
-  { id: 8, name: 'Самара', nameEn: 'Samara', image: 'https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=800', population: 1145000, temp: -11 },
-  { id: 9, name: 'Омск', nameEn: 'Omsk', image: 'https://images.unsplash.com/photo-1562013798-24ed6bb0c8a0?w=800', population: 1125000, temp: -16 },
-  { id: 10, name: 'Ростов-на-Дону', nameEn: 'Rostov-on-Don', image: 'https://images.unsplash.com/photo-1597075933405-c80fbd3c3f1b?w=800', population: 1142000, temp: -3 },
-  { id: 11, name: 'Уфа', nameEn: 'Ufa', image: 'https://images.unsplash.com/photo-1564074893508-41dc50dd1c71?w=800', population: 1145000, temp: -13 },
-  { id: 12, name: 'Красноярск', nameEn: 'Krasnoyarsk', image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800', population: 1093000, temp: -17 },
-  { id: 13, name: 'Воронеж', nameEn: 'Voronezh', image: 'https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=800', population: 1058000, temp: -7 },
-  { id: 14, name: 'Пермь', nameEn: 'Perm', image: 'https://images.unsplash.com/photo-1562013798-24ed6bb0c8a0?w=800', population: 1055000, temp: -14 },
-  { id: 15, name: 'Волгоград', nameEn: 'Volgograd', image: 'https://images.unsplash.com/photo-1597075933405-c80fbd3c3f1b?w=800', population: 1008000, temp: -8 },
-];
+import { cities, attractions, news, hotels } from '@/data/cities';
+import type { City } from '@/data/cities';
 
 const Index = () => {
   const [language, setLanguage] = useState<'ru' | 'en'>('ru');
@@ -81,6 +56,9 @@ const Index = () => {
         city={selectedCity} 
         language={language}
         onBack={() => setSelectedCity(null)}
+        attractions={attractions[selectedCity.id] || []}
+        news={news[selectedCity.id] || []}
+        hotels={hotels[selectedCity.id] || []}
       />
     );
   }

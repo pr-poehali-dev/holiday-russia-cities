@@ -1,14 +1,6 @@
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
-
-interface City {
-  id: number;
-  name: string;
-  nameEn: string;
-  image: string;
-  population: number;
-  temp: number;
-}
+import type { City } from '@/data/cities';
 
 interface CityCardProps {
   city: City;

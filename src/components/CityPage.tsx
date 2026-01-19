@@ -2,148 +2,158 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-
-interface City {
-  id: number;
-  name: string;
-  nameEn: string;
-  image: string;
-  population: number;
-  temp: number;
-}
+import type { City, Attraction, NewsItem, Hotel } from '@/data/cities';
 
 interface CityPageProps {
   city: City;
   language: 'ru' | 'en';
   onBack: () => void;
+  attractions: Attraction[];
+  news: NewsItem[];
+  hotels: Hotel[];
 }
 
-const attractions = [
-  {
-    id: 1,
-    nameRu: 'Красная площадь',
-    nameEn: 'Red Square',
-    descRu: 'Главная площадь Москвы, окружённая историческими зданиями, включая Кремль и собор Василия Блаженного.',
-    descEn: 'The main square of Moscow, surrounded by historic buildings including the Kremlin and St. Basil\'s Cathedral.',
-    image: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=800'
-  },
-  {
-    id: 2,
-    nameRu: 'Кремль',
-    nameEn: 'Kremlin',
-    descRu: 'Историческая крепость в центре Москвы, резиденция Президента России.',
-    descEn: 'A historic fortified complex in the center of Moscow, the official residence of the President of Russia.',
-    image: 'https://images.unsplash.com/photo-1520106212299-d99c443e4568?w=800'
-  },
-  {
-    id: 3,
-    nameRu: 'Собор Василия Блаженного',
-    nameEn: 'St. Basil\'s Cathedral',
-    descRu: 'Уникальный православный храм с разноцветными куполами, символ России.',
-    descEn: 'A unique Orthodox church with colorful domes, a symbol of Russia.',
-    image: 'https://images.unsplash.com/photo-1547448415-e9f5b28e570d?w=800'
-  },
-  {
-    id: 4,
-    nameRu: 'Большой театр',
-    nameEn: 'Bolshoi Theatre',
-    descRu: 'Один из крупнейших в мире театров оперы и балета, основан в 1776 году.',
-    descEn: 'One of the world\'s largest opera and ballet theaters, founded in 1776.',
-    image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800'
-  },
-  {
-    id: 5,
-    nameRu: 'Парк Горького',
-    nameEn: 'Gorky Park',
-    descRu: 'Центральный парк культуры и отдыха с современными зонами отдыха и развлечений.',
-    descEn: 'Central Park of Culture and Leisure with modern recreation and entertainment areas.',
-    image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800'
-  }
-];
+const CityPage = ({ city, language, onBack, attractions, news, hotels }: CityPageProps) => {
+  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${city.lat},${city.lng}&zoom=12`;
 
-const news = [
-  {
-    id: 1,
-    titleRu: 'Новый культурный центр открылся в центре города',
-    titleEn: 'New cultural center opened in the city center',
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400',
-    date: '2026-01-18'
-  },
-  {
-    id: 2,
-    titleRu: 'Фестиваль зимних развлечений начнётся в эти выходные',
-    titleEn: 'Winter entertainment festival starts this weekend',
-    image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400',
-    date: '2026-01-17'
-  },
-  {
-    id: 3,
-    titleRu: 'Реконструкция исторического квартала завершена',
-    titleEn: 'Reconstruction of historic quarter completed',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400',
-    date: '2026-01-16'
-  },
-  {
-    id: 4,
-    titleRu: 'Открытие нового музея современного искусства',
-    titleEn: 'Opening of new contemporary art museum',
-    image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400',
-    date: '2026-01-15'
-  },
-  {
-    id: 5,
-    titleRu: 'Запуск нового туристического маршрута по городу',
-    titleEn: 'Launch of new city tourist route',
-    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400',
-    date: '2026-01-14'
-  }
-];
+  const defaultAttractions: Attraction[] = attractions.length > 0 ? attractions : [
+    {
+      id: 1,
+      cityId: city.id,
+      nameRu: 'Центральная площадь',
+      nameEn: 'Central Square',
+      descRu: 'Главная площадь города, место проведения городских мероприятий и праздников.',
+      descEn: 'The main square of the city, venue for city events and celebrations.',
+      image: city.image
+    },
+    {
+      id: 2,
+      cityId: city.id,
+      nameRu: 'Исторический музей',
+      nameEn: 'Historical Museum',
+      descRu: 'Музей истории и культуры города с уникальными экспонатами.',
+      descEn: 'Museum of city history and culture with unique exhibits.',
+      image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80'
+    },
+    {
+      id: 3,
+      cityId: city.id,
+      nameRu: 'Городской парк',
+      nameEn: 'City Park',
+      descRu: 'Популярное место отдыха горожан с зелеными зонами и развлечениями.',
+      descEn: 'Popular recreation spot with green areas and entertainment.',
+      image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80'
+    },
+    {
+      id: 4,
+      cityId: city.id,
+      nameRu: 'Театр оперы и балета',
+      nameEn: 'Opera and Ballet Theatre',
+      descRu: 'Культурный центр города с классическими и современными постановками.',
+      descEn: 'Cultural center of the city with classical and modern performances.',
+      image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80'
+    },
+    {
+      id: 5,
+      cityId: city.id,
+      nameRu: 'Набережная',
+      nameEn: 'Embankment',
+      descRu: 'Живописная набережная для прогулок с видом на реку.',
+      descEn: 'Picturesque embankment for walks with river views.',
+      image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80'
+    }
+  ];
 
-const hotels = [
-  {
-    id: 1,
-    nameRu: 'Гранд Отель',
-    nameEn: 'Grand Hotel',
-    stars: 5,
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400',
-    website: 'https://example.com/hotel1'
-  },
-  {
-    id: 2,
-    nameRu: 'Империал Палас',
-    nameEn: 'Imperial Palace',
-    stars: 5,
-    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400',
-    website: 'https://example.com/hotel2'
-  },
-  {
-    id: 3,
-    nameRu: 'Центральный Отель',
-    nameEn: 'Central Hotel',
-    stars: 4,
-    image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400',
-    website: 'https://example.com/hotel3'
-  },
-  {
-    id: 4,
-    nameRu: 'Парк Резиденция',
-    nameEn: 'Park Residence',
-    stars: 4,
-    image: 'https://images.unsplash.com/photo-1455587734955-081b22074882?w=400',
-    website: 'https://example.com/hotel4'
-  },
-  {
-    id: 5,
-    nameRu: 'Комфорт Инн',
-    nameEn: 'Comfort Inn',
-    stars: 3,
-    image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400',
-    website: 'https://example.com/hotel5'
-  }
-];
+  const defaultNews: NewsItem[] = news.length > 0 ? news : [
+    {
+      id: 1,
+      cityId: city.id,
+      titleRu: 'Открытие нового культурного центра',
+      titleEn: 'New cultural center opening',
+      image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80',
+      date: '2026-01-18'
+    },
+    {
+      id: 2,
+      cityId: city.id,
+      titleRu: 'Городской фестиваль стартует в эти выходные',
+      titleEn: 'City festival starts this weekend',
+      image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80',
+      date: '2026-01-17'
+    },
+    {
+      id: 3,
+      cityId: city.id,
+      titleRu: 'Реконструкция исторического квартала завершена',
+      titleEn: 'Historic quarter reconstruction completed',
+      image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80',
+      date: '2026-01-16'
+    },
+    {
+      id: 4,
+      cityId: city.id,
+      titleRu: 'Новая выставка в городском музее',
+      titleEn: 'New exhibition at city museum',
+      image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80',
+      date: '2026-01-15'
+    },
+    {
+      id: 5,
+      cityId: city.id,
+      titleRu: 'Запуск нового туристического маршрута',
+      titleEn: 'Launch of new tourist route',
+      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80',
+      date: '2026-01-14'
+    }
+  ];
 
-const CityPage = ({ city, language, onBack }: CityPageProps) => {
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(language === 'ru' ? city.name : city.nameEn)},Russia&zoom=12`;
+  const defaultHotels: Hotel[] = hotels.length > 0 ? hotels : [
+    {
+      id: 1,
+      cityId: city.id,
+      nameRu: 'Гранд Отель',
+      nameEn: 'Grand Hotel',
+      stars: 5,
+      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&q=80',
+      website: 'https://example.com'
+    },
+    {
+      id: 2,
+      cityId: city.id,
+      nameRu: 'Центральный Отель',
+      nameEn: 'Central Hotel',
+      stars: 4,
+      image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&q=80',
+      website: 'https://example.com'
+    },
+    {
+      id: 3,
+      cityId: city.id,
+      nameRu: 'Парк Резиденс',
+      nameEn: 'Park Residence',
+      stars: 4,
+      image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&q=80',
+      website: 'https://example.com'
+    },
+    {
+      id: 4,
+      cityId: city.id,
+      nameRu: 'Бизнес Отель',
+      nameEn: 'Business Hotel',
+      stars: 3,
+      image: 'https://images.unsplash.com/photo-1455587734955-081b22074882?w=400&q=80',
+      website: 'https://example.com'
+    },
+    {
+      id: 5,
+      cityId: city.id,
+      nameRu: 'Комфорт Инн',
+      nameEn: 'Comfort Inn',
+      stars: 3,
+      image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&q=80',
+      website: 'https://example.com'
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-amber-50">
@@ -197,7 +207,7 @@ const CityPage = ({ city, language, onBack }: CityPageProps) => {
           </TabsList>
 
           <TabsContent value="attractions" className="space-y-6">
-            {attractions.map((attraction, index) => (
+            {defaultAttractions.map((attraction, index) => (
               <Card key={attraction.id} className="overflow-hidden hover-scale animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <div className="grid md:grid-cols-2 gap-6">
                   <img 
@@ -219,7 +229,7 @@ const CityPage = ({ city, language, onBack }: CityPageProps) => {
           </TabsContent>
 
           <TabsContent value="news" className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {news.map((item, index) => (
+            {defaultNews.map((item, index) => (
               <Card key={item.id} className="overflow-hidden hover-scale cursor-pointer animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <img 
                   src={item.image} 
@@ -237,7 +247,7 @@ const CityPage = ({ city, language, onBack }: CityPageProps) => {
           </TabsContent>
 
           <TabsContent value="hotels" className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {hotels.map((hotel, index) => (
+            {defaultHotels.map((hotel, index) => (
               <Card 
                 key={hotel.id} 
                 className="overflow-hidden hover-scale cursor-pointer animate-fade-in"
