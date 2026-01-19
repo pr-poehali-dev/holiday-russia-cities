@@ -35,6 +35,111 @@ export const allAttractions: Record<number, Attraction[]> = {
     { id: 23, cityId: 5, nameRu: 'Улица Баумана', nameEn: 'Bauman Street', descRu: 'Пешеходная улица - сердце города с кафе и магазинами.', descEn: 'Pedestrian street - heart of the city with cafes and shops.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
     { id: 24, cityId: 5, nameRu: 'Храм всех религий', nameEn: 'Temple of All Religions', descRu: 'Уникальное архитектурное сооружение, объединяющее религии мира.', descEn: 'Unique architectural structure uniting world religions.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' },
     { id: 25, cityId: 5, nameRu: 'Озеро Кабан', nameEn: 'Lake Kaban', descRu: 'Живописное озеро в центре города с набережной.', descEn: 'Picturesque lake in the city center with embankment.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' }
+  ],
+  6: [
+    { id: 26, cityId: 6, nameRu: 'Нижегородский Кремль', nameEn: 'Nizhny Novgorod Kremlin', descRu: 'Древняя крепость XVI века на слиянии Оки и Волги.', descEn: '16th century ancient fortress at the confluence of Oka and Volga.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/df6e0067-7635-49e7-9830-cdf75e048750.jpg' },
+    { id: 27, cityId: 6, nameRu: 'Чкаловская лестница', nameEn: 'Chkalov Staircase', descRu: 'Монументальная лестница из 560 ступеней к Волге.', descEn: 'Monumental staircase of 560 steps to the Volga.', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80' },
+    { id: 28, cityId: 6, nameRu: 'Большая Покровская', nameEn: 'Bolshaya Pokrovskaya', descRu: 'Пешеходная улица с историческими зданиями.', descEn: 'Pedestrian street with historical buildings.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 29, cityId: 6, nameRu: 'Канатная дорога', nameEn: 'Cable Car', descRu: 'Уникальная канатная дорога через Волгу.', descEn: 'Unique cable car across the Volga.', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=80' },
+    { id: 30, cityId: 6, nameRu: 'Стрелка', nameEn: 'Strelka', descRu: 'Место слияния Оки и Волги, смотровая площадка.', descEn: 'Confluence of Oka and Volga, observation deck.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' }
+  ],
+  7: [
+    { id: 31, cityId: 7, nameRu: 'Кировка', nameEn: 'Kirovka', descRu: 'Пешеходная улица - Челябинский Арбат.', descEn: 'Pedestrian street - Chelyabinsk Arbat.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/69a1cc03-e40d-4fa9-b371-39ef73ca76fb.jpg' },
+    { id: 32, cityId: 7, nameRu: 'Краеведческий музей', nameEn: 'Regional Museum', descRu: 'Музей с фрагментом Челябинского метеорита.', descEn: 'Museum with Chelyabinsk meteorite fragment.', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80' },
+    { id: 33, cityId: 7, nameRu: 'Алое поле', nameEn: 'Aloe Field', descRu: 'Центральный парк с аттракционами.', descEn: 'Central park with attractions.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' },
+    { id: 34, cityId: 7, nameRu: 'Театр оперы и балета', nameEn: 'Opera and Ballet Theatre', descRu: 'Один из лучших театров Урала.', descEn: 'One of the best theatres in the Urals.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' },
+    { id: 35, cityId: 7, nameRu: 'Сад Победы', nameEn: 'Victory Garden', descRu: 'Мемориальный комплекс с вечным огнём.', descEn: 'Memorial complex with eternal flame.', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80' }
+  ],
+  8: [
+    { id: 36, cityId: 8, nameRu: 'Набережная Волги', nameEn: 'Volga Embankment', descRu: 'Протяжённая набережная с пляжами и парками.', descEn: 'Long embankment with beaches and parks.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/8f3e3329-612d-40d2-b809-6538134989c9.jpg' },
+    { id: 37, cityId: 8, nameRu: 'Бункер Сталина', nameEn: 'Stalin Bunker', descRu: 'Секретный бункер времён ВОВ, музей.', descEn: 'Secret WWII bunker, now a museum.', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80' },
+    { id: 38, cityId: 8, nameRu: 'Музей Космонавтики', nameEn: 'Cosmonautics Museum', descRu: 'Музей имени Д.И. Козлова с ракетой.', descEn: 'D.I. Kozlov Museum with rocket.', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=80' },
+    { id: 39, cityId: 8, nameRu: 'Жигулёвская пивоварня', nameEn: 'Zhigulevskoe Brewery', descRu: 'Исторический завод с музеем пива.', descEn: 'Historic brewery with beer museum.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 40, cityId: 8, nameRu: 'Струковский сад', nameEn: 'Strukovsky Garden', descRu: 'Старинный парк в центре города.', descEn: 'Old park in city center.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' }
+  ],
+  9: [
+    { id: 41, cityId: 9, nameRu: 'Успенский собор', nameEn: 'Assumption Cathedral', descRu: 'Главный православный храм Омска.', descEn: 'Main Orthodox church of Omsk.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/5a5d7139-912f-4f73-9d52-2689b8a2e168.jpg' },
+    { id: 42, cityId: 9, nameRu: 'Любинский проспект', nameEn: 'Lyubinsky Prospect', descRu: 'Историческая улица с купеческими домами.', descEn: 'Historic street with merchant houses.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 43, cityId: 9, nameRu: 'Музей Врубеля', nameEn: 'Vrubel Museum', descRu: 'Крупнейший музей искусств Сибири.', descEn: 'Largest art museum in Siberia.', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80' },
+    { id: 44, cityId: 9, nameRu: 'Иртышская набережная', nameEn: 'Irtysh Embankment', descRu: 'Набережная вдоль реки Иртыш.', descEn: 'Embankment along Irtysh river.', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80' },
+    { id: 45, cityId: 9, nameRu: 'Музыкальный театр', nameEn: 'Musical Theatre', descRu: 'Старейший музыкальный театр Сибири.', descEn: 'Oldest musical theatre in Siberia.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' }
+  ],
+  10: [
+    { id: 46, cityId: 10, nameRu: 'Большая Садовая', nameEn: 'Bolshaya Sadovaya', descRu: 'Главная улица Ростова с историей.', descEn: 'Main street of Rostov with history.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/7e5c555c-0cef-4bd0-81bd-d8582bf3bd63.jpg' },
+    { id: 47, cityId: 10, nameRu: 'Набережная Дона', nameEn: 'Don Embankment', descRu: 'Живописная набережная вдоль Дона.', descEn: 'Picturesque embankment along Don.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 48, cityId: 10, nameRu: 'Старочеркасская', nameEn: 'Starocherkasskaya', descRu: 'Музей-заповедник казачества.', descEn: 'Cossack museum-reserve.', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80' },
+    { id: 49, cityId: 10, nameRu: 'Ростов Арена', nameEn: 'Rostov Arena', descRu: 'Современный стадион ЧМ-2018.', descEn: 'Modern 2018 World Cup stadium.', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=80' },
+    { id: 50, cityId: 10, nameRu: 'Левбердон', nameEn: 'Levberdon', descRu: 'Парк на левом берегу Дона.', descEn: 'Park on left bank of Don.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' }
+  ],
+  11: [
+    { id: 51, cityId: 11, nameRu: 'Монумент Салавату Юлаеву', nameEn: 'Salavat Yulaev Monument', descRu: 'Крупнейшая конная статуя в России, символ Башкирии.', descEn: 'Largest equestrian statue in Russia, symbol of Bashkiria.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/1dfbc48c-4628-4158-bc6b-0bd4d00d70ae.jpg' },
+    { id: 52, cityId: 11, nameRu: 'Набережная реки Белой', nameEn: 'Belaya River Embankment', descRu: 'Живописная набережная для прогулок.', descEn: 'Picturesque embankment for walks.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 53, cityId: 11, nameRu: 'Мечеть Ляля-Тюльпан', nameEn: 'Lala Tulpan Mosque', descRu: 'Одна из красивейших мечетей России.', descEn: 'One of the most beautiful mosques in Russia.', image: 'https://images.unsplash.com/photo-1597075933405-c80fbd3c3f1b?w=800&q=80' },
+    { id: 54, cityId: 11, nameRu: 'Башкирский театр оперы и балета', nameEn: 'Bashkir Opera and Ballet Theatre', descRu: 'Ведущий театр республики.', descEn: 'Leading theatre of the republic.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' },
+    { id: 55, cityId: 11, nameRu: 'Парк Победы', nameEn: 'Victory Park', descRu: 'Мемориальный парк с музеем.', descEn: 'Memorial park with museum.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' }
+  ],
+  12: [
+    { id: 56, cityId: 12, nameRu: 'Заповедник "Столбы"', nameEn: 'Stolby Nature Reserve', descRu: 'Уникальные скальные образования для скалолазания.', descEn: 'Unique rock formations for climbing.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/3e9494c3-ff61-4cc6-bcd3-a9c42834efc5.jpg' },
+    { id: 57, cityId: 12, nameRu: 'Часовня Параскевы Пятницы', nameEn: 'Chapel of Paraskeva Pyatnitsa', descRu: 'Символ Красноярска на купюре 10 рублей.', descEn: 'Krasnoyarsk symbol on 10 ruble note.', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=80' },
+    { id: 58, cityId: 12, nameRu: 'Коммунальный мост', nameEn: 'Kommunalny Bridge', descRu: 'Вантовый мост через Енисей.', descEn: 'Cable-stayed bridge across Yenisei.', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80' },
+    { id: 59, cityId: 12, nameRu: 'Театр оперы и балета', nameEn: 'Opera and Ballet Theatre', descRu: 'Крупнейший театр Сибири.', descEn: 'Largest theatre in Siberia.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' },
+    { id: 60, cityId: 12, nameRu: 'Роев ручей', nameEn: 'Roev Ruchey Zoo', descRu: 'Один из крупнейших зоопарков России.', descEn: 'One of Russia\'s largest zoos.', image: 'https://images.unsplash.com/photo-1564074893508-41dc50dd1c71?w=800&q=80' }
+  ],
+  13: [
+    { id: 61, cityId: 13, nameRu: 'Адмиралтейская площадь', nameEn: 'Admiralty Square', descRu: 'Главная площадь Воронежа.', descEn: 'Main square of Voronezh.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/dca4cf61-f530-4ee0-83f0-05f971ef7672.jpg' },
+    { id: 62, cityId: 13, nameRu: 'Благовещенский собор', nameEn: 'Annunciation Cathedral', descRu: 'Третий по величине храм России.', descEn: 'Third largest church in Russia.', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=80' },
+    { id: 63, cityId: 13, nameRu: 'Корабль-музей "Гото Предестинация"', nameEn: 'Ship-Museum "Goto Predestinatsia"', descRu: 'Реплика первого линкора Петра I.', descEn: 'Replica of Peter I\'s first battleship.', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80' },
+    { id: 64, cityId: 13, nameRu: 'Кольцовский сквер', nameEn: 'Koltsovsky Square', descRu: 'Центральный сквер с фонтанами.', descEn: 'Central square with fountains.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' },
+    { id: 65, cityId: 13, nameRu: 'Океанариум', nameEn: 'Oceanarium', descRu: 'Первый океанариум в центре России.', descEn: 'First oceanarium in central Russia.', image: 'https://images.unsplash.com/photo-1564074893508-41dc50dd1c71?w=800&q=80' }
+  ],
+  14: [
+    { id: 66, cityId: 14, nameRu: 'Пермская художественная галерея', nameEn: 'Perm Art Gallery', descRu: 'Богатейшая коллекция деревянной скульптуры.', descEn: 'Richest collection of wooden sculpture.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/6b1938f8-5b2e-4adf-aa88-345a1b27fa93.jpg' },
+    { id: 67, cityId: 14, nameRu: 'Эспланада', nameEn: 'Esplanade', descRu: 'Центральная площадь с фонтанами.', descEn: 'Central square with fountains.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' },
+    { id: 68, cityId: 14, nameRu: 'Музей "Пермь-36"', nameEn: 'Perm-36 Museum', descRu: 'Музей истории политических репрессий.', descEn: 'Museum of history of political repressions.', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80' },
+    { id: 69, cityId: 14, nameRu: 'Набережная Камы', nameEn: 'Kama Embankment', descRu: 'Прогулочная зона вдоль реки.', descEn: 'Walking zone along the river.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 70, cityId: 14, nameRu: 'Театр оперы и балета', nameEn: 'Opera and Ballet Theatre', descRu: 'Один из лучших театров Урала.', descEn: 'One of the best theatres of Urals.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' }
+  ],
+  15: [
+    { id: 71, cityId: 15, nameRu: 'Мамаев курган', nameEn: 'Mamayev Kurgan', descRu: 'Монумент "Родина-мать зовёт!", символ Победы.', descEn: 'The Motherland Calls monument, symbol of Victory.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/d1b0555d-857b-459d-aae7-4bc321c51bb4.jpg' },
+    { id: 72, cityId: 15, nameRu: 'Набережная 62-й Армии', nameEn: '62nd Army Embankment', descRu: 'Центральная набережная Волги.', descEn: 'Central Volga embankment.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 73, cityId: 15, nameRu: 'Музей-панорама "Сталинградская битва"', nameEn: 'Stalingrad Battle Panorama Museum', descRu: 'Крупнейшая панорама в России.', descEn: 'Largest panorama in Russia.', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80' },
+    { id: 74, cityId: 15, nameRu: 'Планетарий', nameEn: 'Planetarium', descRu: 'Один из крупнейших планетариев Европы.', descEn: 'One of Europe\'s largest planetariums.', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=80' },
+    { id: 75, cityId: 15, nameRu: 'Аллея Героев', nameEn: 'Heroes Alley', descRu: 'Мемориальный комплекс в центре.', descEn: 'Memorial complex in center.', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80' }
+  ],
+  16: [
+    { id: 76, cityId: 16, nameRu: 'Парк Галицкого', nameEn: 'Galitsky Park', descRu: 'Лучший парк России 2020 года.', descEn: 'Best park of Russia 2020.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/14b67663-08f3-4e02-b82a-c07191697b58.jpg' },
+    { id: 77, cityId: 16, nameRu: 'Улица Красная', nameEn: 'Krasnaya Street', descRu: 'Главная пешеходная улица города.', descEn: 'Main pedestrian street of city.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 78, cityId: 16, nameRu: 'Стадион "Краснодар"', nameEn: 'Krasnodar Stadium', descRu: 'Современный футбольный стадион.', descEn: 'Modern football stadium.', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=80' },
+    { id: 79, cityId: 16, nameRu: 'Сафари-парк', nameEn: 'Safari Park', descRu: 'Зоопарк с дикими животными.', descEn: 'Zoo with wild animals.', image: 'https://images.unsplash.com/photo-1564074893508-41dc50dd1c71?w=800&q=80' },
+    { id: 80, cityId: 16, nameRu: 'Театральная площадь', nameEn: 'Theatre Square', descRu: 'Центральная площадь с фонтанами.', descEn: 'Central square with fountains.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' }
+  ],
+  17: [
+    { id: 81, cityId: 17, nameRu: 'Набережная Космонавтов', nameEn: 'Cosmonauts Embankment', descRu: 'Главная набережная Волги.', descEn: 'Main Volga embankment.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/3889440d-7e9f-4503-bf4b-ccc108048f4c.jpg' },
+    { id: 82, cityId: 17, nameRu: 'Консерватория имени Собинова', nameEn: 'Sobinov Conservatory', descRu: 'Старейшая консерватория России.', descEn: 'Russia\'s oldest conservatory.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' },
+    { id: 83, cityId: 17, nameRu: 'Проспект Кирова', nameEn: 'Kirov Prospect', descRu: 'Центральная улица города.', descEn: 'Central city street.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 84, cityId: 17, nameRu: 'Лимонарий', nameEn: 'Lemonarium', descRu: 'Оранжерея с экзотическими растениями.', descEn: 'Greenhouse with exotic plants.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' },
+    { id: 85, cityId: 17, nameRu: 'Парк Победы', nameEn: 'Victory Park', descRu: 'Мемориальный парк на набережной.', descEn: 'Memorial park on embankment.', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80' }
+  ],
+  18: [
+    { id: 86, cityId: 18, nameRu: 'Набережная Туры', nameEn: 'Tura Embankment', descRu: 'Прогулочная зона вдоль реки.', descEn: 'Walking zone along river.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/84dac765-716c-486f-9188-52cbc02c32c3.jpg' },
+    { id: 87, cityId: 18, nameRu: 'Цветной бульвар', nameEn: 'Tsvetnoy Boulevard', descRu: 'Популярная пешеходная улица.', descEn: 'Popular pedestrian street.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 88, cityId: 18, nameRu: 'Термальные источники', nameEn: 'Thermal Springs', descRu: 'Знаменитые источники под открытым небом.', descEn: 'Famous outdoor springs.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' },
+    { id: 89, cityId: 18, nameRu: 'Драматический театр', nameEn: 'Drama Theatre', descRu: 'Ведущий театр города.', descEn: 'Leading city theatre.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' },
+    { id: 90, cityId: 18, nameRu: 'Технопарк', nameEn: 'Technopark', descRu: 'Современный научный центр.', descEn: 'Modern science center.', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=80' }
+  ],
+  19: [
+    { id: 91, cityId: 19, nameRu: 'Музей АвтоВАЗа', nameEn: 'AvtoVAZ Museum', descRu: 'История автомобилестроения России.', descEn: 'History of Russian car industry.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/453c0b4f-1e11-443f-8da3-170bd23d7959.jpg' },
+    { id: 92, cityId: 19, nameRu: 'Технический музей', nameEn: 'Technical Museum', descRu: 'Коллекция техники XX века.', descEn: 'Collection of 20th century technology.', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80' },
+    { id: 93, cityId: 19, nameRu: 'Жигулёвская ГЭС', nameEn: 'Zhiguli Hydroelectric Station', descRu: 'Одна из крупнейших ГЭС России.', descEn: 'One of Russia\'s largest hydroelectric stations.', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80' },
+    { id: 94, cityId: 19, nameRu: 'Парк Победы', nameEn: 'Victory Park', descRu: 'Центральный парк города.', descEn: 'Central city park.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' },
+    { id: 95, cityId: 19, nameRu: 'Набережная', nameEn: 'Embankment', descRu: 'Прогулочная зона у Волги.', descEn: 'Walking zone at Volga.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' }
+  ],
+  20: [
+    { id: 96, cityId: 20, nameRu: 'Музей Калашникова', nameEn: 'Kalashnikov Museum', descRu: 'Музей стрелкового оружия.', descEn: 'Museum of small arms.', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/abbcc441-ada0-43b4-9783-7b75e6724890.jpg' },
+    { id: 97, cityId: 20, nameRu: 'Зоопарк', nameEn: 'Zoo', descRu: 'Один из крупных зоопарков Урала.', descEn: 'One of large Ural zoos.', image: 'https://images.unsplash.com/photo-1564074893508-41dc50dd1c71?w=800&q=80' },
+    { id: 98, cityId: 20, nameRu: 'Набережная Ижа', nameEn: 'Izh Embankment', descRu: 'Главная набережная города.', descEn: 'Main city embankment.', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80' },
+    { id: 99, cityId: 20, nameRu: 'Летний сад', nameEn: 'Summer Garden', descRu: 'Исторический парк в центре.', descEn: 'Historic park in center.', image: 'https://images.unsplash.com/photo-1560859251-d571d95f9d71?w=800&q=80' },
+    { id: 100, cityId: 20, nameRu: 'Оперный театр', nameEn: 'Opera Theatre', descRu: 'Театр оперы и балета республики.', descEn: 'Republic opera and ballet theatre.', image: 'https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=800&q=80' }
   ]
 };
 
@@ -108,6 +213,76 @@ export const allNews: Record<number, NewsItem[]> = {
     { id: 48, cityId: 10, titleRu: 'Казачья станица открыта как музей', titleEn: 'Cossack village opened as museum', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
     { id: 49, cityId: 10, titleRu: 'Новый аквапарк открылся в центре', titleEn: 'New water park opened in center', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
     { id: 50, cityId: 10, titleRu: 'Стадион "Ростов Арена" принимает концерты', titleEn: 'Rostov Arena hosts concerts', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  11: [
+    { id: 51, cityId: 11, titleRu: 'Новый театр открылся в центре Уфы', titleEn: 'New theatre opened in Ufa center', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 52, cityId: 11, titleRu: 'Фестиваль башкирской культуры стартует', titleEn: 'Bashkir culture festival starts', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 53, cityId: 11, titleRu: 'Обновлена набережная реки Белой', titleEn: 'Belaya river embankment renewed', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 54, cityId: 11, titleRu: 'Памятник Салавату Юлаеву реставрирован', titleEn: 'Salavat Yulaev monument restored', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80', date: '2026-01-15' },
+    { id: 55, cityId: 11, titleRu: 'Новый парк открыт в Черниковке', titleEn: 'New park opened in Chernikovka', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  12: [
+    { id: 56, cityId: 12, titleRu: 'Столбы получили статус ЮНЕСКО', titleEn: 'Stolby received UNESCO status', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 57, cityId: 12, titleRu: 'Новая канатная дорога к Столбам', titleEn: 'New cable car to Stolby', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 58, cityId: 12, titleRu: 'Театр оперы и балета отмечает юбилей', titleEn: 'Opera and Ballet Theatre celebrates anniversary', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 59, cityId: 12, titleRu: 'Коммунальный мост отреставрирован', titleEn: 'Kommunalny Bridge restored', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
+    { id: 60, cityId: 12, titleRu: 'Фестиваль "Мир Сибири" анонсирован', titleEn: 'World of Siberia festival announced', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  13: [
+    { id: 61, cityId: 13, titleRu: 'Новый океанариум открылся', titleEn: 'New oceanarium opened', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 62, cityId: 13, titleRu: 'Адмиралтейская площадь обновлена', titleEn: 'Admiralteyskaya Square renewed', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 63, cityId: 13, titleRu: 'Фестиваль Платоновский старт', titleEn: 'Platonov Festival starts', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 64, cityId: 13, titleRu: 'Кольцовский сквер реконструирован', titleEn: 'Koltsovsky Square reconstructed', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
+    { id: 65, cityId: 13, titleRu: 'Новая филармония принимает гостей', titleEn: 'New philharmonic receives guests', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  14: [
+    { id: 66, cityId: 14, titleRu: 'Пермская художественная галерея расширена', titleEn: 'Perm Art Gallery expanded', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 67, cityId: 14, titleRu: 'Фестиваль "Белые ночи" анонсирован', titleEn: 'White Nights festival announced', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 68, cityId: 14, titleRu: 'Обновлена Эспланада', titleEn: 'Esplanade renewed', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 69, cityId: 14, titleRu: 'Пермь-36 стал музеем истории', titleEn: 'Perm-36 became history museum', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
+    { id: 70, cityId: 14, titleRu: 'Новый зоопарк открыл экспозицию', titleEn: 'New zoo opened exposition', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  15: [
+    { id: 71, cityId: 15, titleRu: 'Мамаев курган принял миллионного гостя', titleEn: 'Mamayev Kurgan received millionth guest', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 72, cityId: 15, titleRu: 'Набережная 62-й Армии обновлена', titleEn: '62nd Army Embankment renewed', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 73, cityId: 15, titleRu: 'Фестиваль "Волгафест" стартует летом', titleEn: 'Volgafest festival starts in summer', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 74, cityId: 15, titleRu: 'Музей-панорама расширил экспозицию', titleEn: 'Panorama Museum expanded exposition', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
+    { id: 75, cityId: 15, titleRu: 'Планетарий открыл новый зал', titleEn: 'Planetarium opened new hall', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  16: [
+    { id: 76, cityId: 16, titleRu: 'Парк Галицкого стал лучшим в России', titleEn: 'Galitsky Park became best in Russia', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 77, cityId: 16, titleRu: 'Фестиваль "Улица Красная" объявлен', titleEn: 'Krasnaya Street festival announced', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 78, cityId: 16, titleRu: 'Стадион "Краснодар" принимает концерты', titleEn: 'Krasnodar Stadium hosts concerts', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 79, cityId: 16, titleRu: 'Сафари-парк открыл новые вольеры', titleEn: 'Safari Park opened new enclosures', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
+    { id: 80, cityId: 16, titleRu: 'Новый театр начал сезон', titleEn: 'New theatre started season', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  17: [
+    { id: 81, cityId: 17, titleRu: 'Набережная Космонавтов обновлена', titleEn: 'Cosmonauts Embankment renewed', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 82, cityId: 17, titleRu: 'Консерватория отмечает юбилей', titleEn: 'Conservatory celebrates anniversary', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 83, cityId: 17, titleRu: 'Фестиваль "Собиновский" анонсирован', titleEn: 'Sobinov Festival announced', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 84, cityId: 17, titleRu: 'Лимонарий расширил коллекцию', titleEn: 'Lemonarium expanded collection', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
+    { id: 85, cityId: 17, titleRu: 'Новая канатная дорога открыта', titleEn: 'New cable car opened', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  18: [
+    { id: 86, cityId: 18, titleRu: 'Термальные источники расширены', titleEn: 'Thermal springs expanded', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 87, cityId: 18, titleRu: 'Фестиваль "Сибирский хаски" старт', titleEn: 'Siberian Husky festival starts', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 88, cityId: 18, titleRu: 'Новый технопарк открыт', titleEn: 'New technopark opened', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 89, cityId: 18, titleRu: 'Набережная Туры реконструирована', titleEn: 'Tura Embankment reconstructed', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
+    { id: 90, cityId: 18, titleRu: 'Драмтеатр представил премьеру', titleEn: 'Drama Theatre presented premiere', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  19: [
+    { id: 91, cityId: 19, titleRu: 'АвтоВАЗ представил новую модель', titleEn: 'AvtoVAZ presented new model', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 92, cityId: 19, titleRu: 'Технический музей обновлён', titleEn: 'Technical Museum renewed', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 93, cityId: 19, titleRu: 'Фестиваль "Грушинский" анонсирован', titleEn: 'Grushinsky Festival announced', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 94, cityId: 19, titleRu: 'Набережная Автозаводского района обновлена', titleEn: 'Avtozavodsky District embankment renewed', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
+    { id: 95, cityId: 19, titleRu: 'Новый парк открылся в Комсомольском районе', titleEn: 'New park opened in Komsomolsky District', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
+  ],
+  20: [
+    { id: 96, cityId: 20, titleRu: 'Зоопарк пополнился редкими животными', titleEn: 'Zoo received rare animals', image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80', date: '2026-01-18' },
+    { id: 97, cityId: 20, titleRu: 'Фестиваль "Италмас" стартует', titleEn: 'Italmas Festival starts', image: 'https://images.unsplash.com/photo-1482263231623-6121096b0d3f?w=400&q=80', date: '2026-01-17' },
+    { id: 98, cityId: 20, titleRu: 'Новый музей оружия открылся', titleEn: 'New Weapons Museum opened', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80', date: '2026-01-16' },
+    { id: 99, cityId: 20, titleRu: 'Набережная Ижа обновлена', titleEn: 'Izh Embankment renewed', image: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=400&q=80', date: '2026-01-15' },
+    { id: 100, cityId: 20, titleRu: 'Оперный театр представил новый сезон', titleEn: 'Opera Theatre presented new season', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80', date: '2026-01-14' }
   ]
 };
 
