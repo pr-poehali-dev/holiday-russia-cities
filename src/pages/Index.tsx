@@ -77,38 +77,38 @@ const Index = () => {
           <div className="absolute top-6 right-6 flex flex-col items-end gap-3">
             <div className="flex gap-2">
               <Button
-                variant={language === 'ru' ? 'default' : 'outline'}
+                variant="ghost"
                 size="sm"
                 onClick={() => setLanguage('ru')}
-                className="bg-white/90 hover:bg-white"
+                className={`backdrop-blur-sm border ${language === 'ru' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
               >
                 🇷🇺 RU
               </Button>
               <Button
-                variant={language === 'en' ? 'default' : 'outline'}
+                variant="ghost"
                 size="sm"
                 onClick={() => setLanguage('en')}
-                className="bg-white/90 hover:bg-white"
+                className={`backdrop-blur-sm border ${language === 'en' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
               >
                 🇬🇧 EN
               </Button>
             </div>
             
-            <Card className="px-4 py-2 bg-white/90 backdrop-blur">
-              <div className="flex items-center gap-2 text-sm">
-                <Icon name="DollarSign" className="text-green-600" size={16} />
+            <div className="px-4 py-2 backdrop-blur-sm border border-white/30 rounded-lg">
+              <div className="flex items-center gap-2 text-sm text-white">
+                <Icon name="DollarSign" className="text-green-300" size={16} />
                 <span className="font-semibold">USD:</span>
-                <span className="text-primary font-bold">{usdRate.toFixed(2)} ₽</span>
+                <span className="font-bold">{usdRate.toFixed(2)} ₽</span>
               </div>
-            </Card>
+            </div>
             
-            <Card className="px-4 py-2 bg-white/90 backdrop-blur">
-              <div className="flex items-center gap-2 text-sm">
-                <Icon name="Euro" className="text-blue-600" size={16} />
+            <div className="px-4 py-2 backdrop-blur-sm border border-white/30 rounded-lg">
+              <div className="flex items-center gap-2 text-sm text-white">
+                <Icon name="Euro" className="text-blue-300" size={16} />
                 <span className="font-semibold">EUR:</span>
-                <span className="text-primary font-bold">{eurRate.toFixed(2)} ₽</span>
+                <span className="font-bold">{eurRate.toFixed(2)} ₽</span>
               </div>
-            </Card>
+            </div>
           </div>
 
           <div className="absolute inset-0 flex items-start pt-16 md:pt-20">
