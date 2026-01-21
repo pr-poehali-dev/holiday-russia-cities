@@ -75,9 +75,12 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
           <div className="absolute inset-0 flex items-start pt-16 md:pt-20">
             <div className="container mx-auto px-8 md:px-12">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-2xl">
-                {language === 'ru' ? 'Отдых в России — города миллионщики' : 'Holidays in Russia in the cities of millionaires'}
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-2xl mb-2">
+                Отдых в России — города миллионщики
               </h1>
+              <h2 className="text-base md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-xl">
+                Holidays in Russia in the cities of millionaires
+              </h2>
             </div>
           </div>
         </div>
