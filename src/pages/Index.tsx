@@ -168,7 +168,7 @@ const Index = () => {
       </div>
 
       <div 
-        className="relative py-8"
+        className="relative py-8 -mt-1"
         style={{
           backgroundImage: 'url(https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/bucket/5877e72a-8b02-4dd5-856b-bfa5e55fdce7.jpg)',
           backgroundSize: 'cover',
