@@ -73,6 +73,44 @@ const Index = () => {
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+          
+          <div className="absolute top-6 right-6 flex flex-col items-end gap-3">
+            <div className="flex gap-2">
+              <Button
+                variant={language === 'ru' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setLanguage('ru')}
+                className="bg-white/90 hover:bg-white"
+              >
+                🇷🇺 RU
+              </Button>
+              <Button
+                variant={language === 'en' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setLanguage('en')}
+                className="bg-white/90 hover:bg-white"
+              >
+                🇬🇧 EN
+              </Button>
+            </div>
+            
+            <Card className="px-4 py-2 bg-white/90 backdrop-blur">
+              <div className="flex items-center gap-2 text-sm">
+                <Icon name="DollarSign" className="text-green-600" size={16} />
+                <span className="font-semibold">USD:</span>
+                <span className="text-primary font-bold">{usdRate.toFixed(2)} ₽</span>
+              </div>
+            </Card>
+            
+            <Card className="px-4 py-2 bg-white/90 backdrop-blur">
+              <div className="flex items-center gap-2 text-sm">
+                <Icon name="Euro" className="text-blue-600" size={16} />
+                <span className="font-semibold">EUR:</span>
+                <span className="text-primary font-bold">{eurRate.toFixed(2)} ₽</span>
+              </div>
+            </Card>
+          </div>
+
           <div className="absolute inset-0 flex items-start pt-16 md:pt-20">
             <div className="container mx-auto px-8 md:px-12">
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-2xl mb-2">
@@ -83,79 +121,45 @@ const Index = () => {
               </h2>
             </div>
           </div>
+
+          <div className="absolute bottom-8 left-0 right-0">
+            <div className="container mx-auto px-8 md:px-12">
+              <div className="max-w-2xl">
+                <div className="relative">
+                  <Icon name="Search" className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" size={24} />
+                  <Input
+                    type="text"
+                    placeholder={language === 'ru' ? 'Поиск по городам...' : 'Search cities...'}
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="pl-14 py-6 text-lg bg-white/95 backdrop-blur border-2 border-white shadow-2xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        <header className="text-center mb-12 animate-fade-in">
-
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
-            <Card className="px-6 py-3 bg-white/80 backdrop-blur">
-              <div className="flex items-center gap-2">
-                <Icon name="DollarSign" className="text-green-600" size={20} />
-                <span className="font-semibold">USD:</span>
-                <span className="text-primary font-bold">{usdRate.toFixed(2)} ₽</span>
-              </div>
-            </Card>
-            
-            <Card className="px-6 py-3 bg-white/80 backdrop-blur">
-              <div className="flex items-center gap-2">
-                <Icon name="Euro" className="text-blue-600" size={20} />
-                <span className="font-semibold">EUR:</span>
-                <span className="text-primary font-bold">{eurRate.toFixed(2)} ₽</span>
-              </div>
-            </Card>
-
-            <div className="flex gap-2">
-              <Button
-                variant={language === 'ru' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => setLanguage('ru')}
-              >
-                🇷🇺 RU
-              </Button>
-              <Button
-                variant={language === 'en' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => setLanguage('en')}
-              >
-                🇬🇧 EN
-              </Button>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-            <Button variant="outline" size="sm" onClick={() => handleShare('vk')}>
-              <Icon name="Share2" size={16} className="mr-1" />
-              VK
-            </Button>
-            <Button variant="outline" size="sm" onClick={() => handleShare('telegram')}>
-              <Icon name="Send" size={16} className="mr-1" />
-              Telegram
-            </Button>
-            <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}>
-              <Icon name="MessageCircle" size={16} className="mr-1" />
-              WhatsApp
-            </Button>
-            <Button variant="outline" size="sm" onClick={() => handleShare('copy')}>
-              <Icon name="Copy" size={16} className="mr-1" />
-              {language === 'ru' ? 'Копировать' : 'Copy'}
-            </Button>
-          </div>
-
-          <div className="max-w-xl mx-auto">
-            <div className="relative">
-              <Icon name="Search" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={20} />
-              <Input
-                type="text"
-                placeholder={language === 'ru' ? 'Поиск по городам, достопримечательностям, отелям...' : 'Search cities, attractions, hotels...'}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10 py-6 text-lg"
-              />
-            </div>
-          </div>
-        </header>
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
+          <Button variant="outline" size="sm" onClick={() => handleShare('vk')}>
+            <Icon name="Share2" size={16} className="mr-1" />
+            VK
+          </Button>
+          <Button variant="outline" size="sm" onClick={() => handleShare('telegram')}>
+            <Icon name="Send" size={16} className="mr-1" />
+            Telegram
+          </Button>
+          <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}>
+            <Icon name="MessageCircle" size={16} className="mr-1" />
+            WhatsApp
+          </Button>
+          <Button variant="outline" size="sm" onClick={() => handleShare('copy')}>
+            <Icon name="Copy" size={16} className="mr-1" />
+            {language === 'ru' ? 'Копировать' : 'Copy'}
+          </Button>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {filteredCities.map((city, index) => (
