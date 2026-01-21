@@ -65,14 +65,31 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-amber-50">
+      <div className="w-full relative mb-12">
+        <div 
+          className="w-full h-[500px] bg-cover bg-center relative"
+          style={{
+            backgroundImage: 'url(https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/bucket/2c91064d-49cb-47c5-8c85-3428431f6628.png)',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 flex items-center">
+            <div className="container mx-auto px-8 md:px-12">
+              <h1 className="text-4xl md:text-7xl font-bold text-white mb-3 leading-tight drop-shadow-2xl">
+                {language === 'ru' ? 'Отдых в России — города миллионщики' : 'HOLIDAYS IN RUSSIA'}
+              </h1>
+              {language === 'en' && (
+                <h2 className="text-2xl md:text-4xl font-semibold text-white/90 drop-shadow-xl">
+                  in the cities of millionaires
+                </h2>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-2 leading-tight">
-            {language === 'ru' ? 'ОТДЫХ В РОССИИ' : 'HOLIDAYS IN RUSSIA'}
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-6">
-            {language === 'ru' ? 'Города миллионщики' : 'Cities of Millionaires'}
-          </h2>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
             <Card className="px-6 py-3 bg-white/80 backdrop-blur">
