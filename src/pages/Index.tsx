@@ -75,64 +75,77 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
           
           <div className="absolute top-6 right-6 flex flex-col items-end gap-3">
-            <div className="flex items-center gap-3">
-              <div className="relative group">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="backdrop-blur-sm border border-white/30 text-white hover:bg-white/10"
-                >
-                  <Icon name="Share2" size={18} />
-                </Button>
-                <div className="absolute right-0 top-full mt-2 hidden group-hover:block bg-white/95 backdrop-blur rounded-lg shadow-xl p-2 min-w-[160px] z-50">
-                  <button onClick={() => handleShare('vk')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
-                    <Icon name="Share2" size={14} /> VK
-                  </button>
-                  <button onClick={() => handleShare('telegram')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
-                    <Icon name="Send" size={14} /> Telegram
-                  </button>
-                  <button onClick={() => handleShare('whatsapp')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
-                    <Icon name="MessageCircle" size={14} /> WhatsApp
-                  </button>
-                  <button onClick={() => handleShare('copy')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
-                    <Icon name="Copy" size={14} /> {language === 'ru' ? 'Копировать' : 'Copy'}
-                  </button>
-                </div>
-              </div>
+            <div 
+              className="relative p-4 rounded-2xl overflow-hidden"
+              style={{
+                backgroundImage: 'url(https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/bucket/e38be841-8943-45e3-95a4-8f45ef5cf70d.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+            >
+              <div className="absolute inset-0 bg-black/20 backdrop-blur-md"></div>
+              
+              <div className="relative flex flex-col gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="relative group">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="backdrop-blur-sm border border-white/30 text-white hover:bg-white/10"
+                    >
+                      <Icon name="Share2" size={18} />
+                    </Button>
+                    <div className="absolute right-0 top-full mt-2 hidden group-hover:block bg-white/95 backdrop-blur rounded-lg shadow-xl p-2 min-w-[160px] z-50">
+                      <button onClick={() => handleShare('vk')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
+                        <Icon name="Share2" size={14} /> VK
+                      </button>
+                      <button onClick={() => handleShare('telegram')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
+                        <Icon name="Send" size={14} /> Telegram
+                      </button>
+                      <button onClick={() => handleShare('whatsapp')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
+                        <Icon name="MessageCircle" size={14} /> WhatsApp
+                      </button>
+                      <button onClick={() => handleShare('copy')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
+                        <Icon name="Copy" size={14} /> {language === 'ru' ? 'Копировать' : 'Copy'}
+                      </button>
+                    </div>
+                  </div>
 
-              <div className="flex gap-2">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setLanguage('ru')}
-                  className={`backdrop-blur-sm border ${language === 'ru' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
-                >
-                  🇷🇺 RU
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setLanguage('en')}
-                  className={`backdrop-blur-sm border ${language === 'en' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
-                >
-                  🇬🇧 EN
-                </Button>
-              </div>
-            </div>
-            
-            <div className="px-4 py-2 backdrop-blur-sm border border-white/30 rounded-lg">
-              <div className="flex items-center gap-2 text-sm text-white">
-                <Icon name="DollarSign" className="text-green-300" size={16} />
-                <span className="font-semibold">USD:</span>
-                <span className="font-bold">{usdRate.toFixed(2)} ₽</span>
-              </div>
-            </div>
-            
-            <div className="px-4 py-2 backdrop-blur-sm border border-white/30 rounded-lg">
-              <div className="flex items-center gap-2 text-sm text-white">
-                <Icon name="Euro" className="text-blue-300" size={16} />
-                <span className="font-semibold">EUR:</span>
-                <span className="font-bold">{eurRate.toFixed(2)} ₽</span>
+                  <div className="flex gap-2">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => setLanguage('ru')}
+                      className={`backdrop-blur-sm border ${language === 'ru' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
+                    >
+                      🇷🇺 RU
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => setLanguage('en')}
+                      className={`backdrop-blur-sm border ${language === 'en' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
+                    >
+                      🇬🇧 EN
+                    </Button>
+                  </div>
+                </div>
+                
+                <div className="px-4 py-2 backdrop-blur-sm border border-white/30 rounded-lg">
+                  <div className="flex items-center gap-2 text-sm text-white">
+                    <Icon name="DollarSign" className="text-green-300" size={16} />
+                    <span className="font-semibold">USD:</span>
+                    <span className="font-bold">{usdRate.toFixed(2)} ₽</span>
+                  </div>
+                </div>
+                
+                <div className="px-4 py-2 backdrop-blur-sm border border-white/30 rounded-lg">
+                  <div className="flex items-center gap-2 text-sm text-white">
+                    <Icon name="Euro" className="text-blue-300" size={16} />
+                    <span className="font-semibold">EUR:</span>
+                    <span className="font-bold">{eurRate.toFixed(2)} ₽</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
