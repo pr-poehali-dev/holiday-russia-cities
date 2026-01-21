@@ -65,7 +65,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-amber-50">
-      <div className="w-full relative mb-12">
+      <div className="w-full relative">
         <div 
           className="w-full h-[500px] bg-cover bg-center relative"
           style={{
