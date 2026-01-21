@@ -126,13 +126,13 @@ const Index = () => {
             <div className="container mx-auto px-8 md:px-12">
               <div className="max-w-2xl">
                 <div className="relative">
-                  <Icon name="Search" className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" size={24} />
+                  <Icon name="Search" className="absolute left-4 top-1/2 -translate-y-1/2 text-white/60" size={24} />
                   <Input
                     type="text"
-                    placeholder={language === 'ru' ? 'Поиск по городам...' : 'Search cities...'}
+                    placeholder={language === 'ru' ? 'Поиск' : 'Search'}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="pl-14 py-6 text-lg bg-white/95 backdrop-blur border-2 border-white shadow-2xl"
+                    className="pl-14 py-6 text-lg bg-transparent backdrop-blur-sm border-2 border-white/50 text-white placeholder:text-white/50 focus:border-white focus:bg-white/10"
                   />
                 </div>
               </div>
