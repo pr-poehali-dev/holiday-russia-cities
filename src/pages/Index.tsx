@@ -75,23 +75,49 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
           
           <div className="absolute top-6 right-6 flex flex-col items-end gap-3">
-            <div className="flex gap-2">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setLanguage('ru')}
-                className={`backdrop-blur-sm border ${language === 'ru' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
-              >
-                🇷🇺 RU
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setLanguage('en')}
-                className={`backdrop-blur-sm border ${language === 'en' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
-              >
-                🇬🇧 EN
-              </Button>
+            <div className="flex items-center gap-3">
+              <div className="relative group">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="backdrop-blur-sm border border-white/30 text-white hover:bg-white/10"
+                >
+                  <Icon name="Share2" size={18} />
+                </Button>
+                <div className="absolute right-0 top-full mt-2 hidden group-hover:block bg-white/95 backdrop-blur rounded-lg shadow-xl p-2 min-w-[160px] z-50">
+                  <button onClick={() => handleShare('vk')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
+                    <Icon name="Share2" size={14} /> VK
+                  </button>
+                  <button onClick={() => handleShare('telegram')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
+                    <Icon name="Send" size={14} /> Telegram
+                  </button>
+                  <button onClick={() => handleShare('whatsapp')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
+                    <Icon name="MessageCircle" size={14} /> WhatsApp
+                  </button>
+                  <button onClick={() => handleShare('copy')} className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded flex items-center gap-2 text-sm">
+                    <Icon name="Copy" size={14} /> {language === 'ru' ? 'Копировать' : 'Copy'}
+                  </button>
+                </div>
+              </div>
+
+              <div className="flex gap-2">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setLanguage('ru')}
+                  className={`backdrop-blur-sm border ${language === 'ru' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
+                >
+                  🇷🇺 RU
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setLanguage('en')}
+                  className={`backdrop-blur-sm border ${language === 'en' ? 'bg-white/20 border-white/50 text-white' : 'bg-transparent border-white/30 text-white/70 hover:bg-white/10 hover:text-white'}`}
+                >
+                  🇬🇧 EN
+                </Button>
+              </div>
             </div>
             
             <div className="px-4 py-2 backdrop-blur-sm border border-white/30 rounded-lg">
@@ -142,24 +168,6 @@ const Index = () => {
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-          <Button variant="outline" size="sm" onClick={() => handleShare('vk')}>
-            <Icon name="Share2" size={16} className="mr-1" />
-            VK
-          </Button>
-          <Button variant="outline" size="sm" onClick={() => handleShare('telegram')}>
-            <Icon name="Send" size={16} className="mr-1" />
-            Telegram
-          </Button>
-          <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}>
-            <Icon name="MessageCircle" size={16} className="mr-1" />
-            WhatsApp
-          </Button>
-          <Button variant="outline" size="sm" onClick={() => handleShare('copy')}>
-            <Icon name="Copy" size={16} className="mr-1" />
-            {language === 'ru' ? 'Копировать' : 'Copy'}
-          </Button>
-        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {filteredCities.map((city, index) => (
