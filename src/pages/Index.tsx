@@ -139,11 +139,11 @@ const Index = () => {
 
           <div className="absolute inset-0 flex items-start pt-16 md:pt-20">
             <div className="container mx-auto px-8 md:px-12">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-2xl mb-2">
-                Отдых в России — города миллионщики
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-2xl mb-3">
+                Отдых в России — города миллионники
               </h1>
-              <h2 className="text-base md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-xl">
-                Holidays in Russia in the cities of millionaires
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-semibold text-white/90 drop-shadow-xl">
+                Holidays in Russia — cities with millions
               </h2>
             </div>
           </div>
