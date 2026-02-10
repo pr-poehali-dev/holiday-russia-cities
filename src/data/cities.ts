@@ -39,7 +39,7 @@ export interface Hotel {
 }
 
 export const cities: City[] = [
-  { id: 1, name: 'Москва', nameEn: 'Moscow', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/268b3e34-311b-42c8-adee-75a12f70e9bb.jpg', population: 13010000, temp: -5, lat: 55.7558, lng: 37.6173 },
+  { id: 1, name: 'Москва', nameEn: 'Moscow', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/bucket/e185a1aa-4a07-42fc-a553-e8fb43a4a649.jpg', population: 13010000, temp: -5, lat: 55.7558, lng: 37.6173 },
   { id: 2, name: 'Санкт-Петербург', nameEn: 'Saint Petersburg', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/32c39db3-8f95-4ecc-bb2d-50b6e1e821b9.jpg', population: 5600000, temp: -8, lat: 59.9343, lng: 30.3351 },
   { id: 3, name: 'Новосибирск', nameEn: 'Novosibirsk', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/e63c30bb-96c4-4e09-9ea3-df449fee4963.jpg', population: 1633000, temp: -15, lat: 55.0084, lng: 82.9357 },
   { id: 4, name: 'Екатеринбург', nameEn: 'Yekaterinburg', image: 'https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/files/780cc076-9133-4fa4-aa24-654313ca7ecc.jpg', population: 1544000, temp: -12, lat: 56.8389, lng: 60.6057 },
