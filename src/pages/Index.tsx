@@ -170,13 +170,13 @@ const Index = () => {
       <div 
         className="relative py-8 -mt-1"
         style={{
-          backgroundImage: 'url(https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/bucket/5877e72a-8b02-4dd5-856b-bfa5e55fdce7.jpg)',
+          backgroundImage: 'url(https://cdn.poehali.dev/projects/2ce14516-e95f-4a3f-a5c2-96b9456e60a9/bucket/26155ba5-0225-423b-9201-424c137e62d5.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
         }}
       >
-        <div className="absolute inset-0 bg-white/30"></div>
+        <div className="absolute inset-0 bg-white/40"></div>
         
         <div className="relative container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
